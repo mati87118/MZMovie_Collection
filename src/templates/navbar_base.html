@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>My Movie Collection</title>
+<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+<link href="{{ url_for('static', filename='css/bootstrap-social.css') }}" rel="stylesheet" />  
+<link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet" />
+  <style>
+    body{ 
+      padding-top: 50px;
+    } 
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed"
+      data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+      aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{{ url_for('.root') }}">Home</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+       <li><a href="{{ url_for('.page4') }}">About</a></li>
+<li><a href="{{ url_for('.page1') }}">Categories</a></li>
+<li><a href="{{ url_for('.page5') }}">Database</a></li>
+       </ul>
+       </div>
+    </div>
+  </nav>
+  
+  <style>
+  .business-header {
+	height: 400px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	background-attachment: scroll;
+	background-image: url(http://localhost:5000/static/img/collection.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+</style>
+
+   <header class="business-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="tagline">My Movie Collection</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>Welcome To My Movie Collection</h2>
+                <p>Welcome to my movie collection. This is place where you can find all the besrt movies that i keep in my collection. You can browse through few different kinds of movie categories like action, horror, comedy or fantasy.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae similique eligendi reiciendis sunt distinctio odit? Quia, neque, ipsa, adipisci quisquam ullam deserunt accusantium illo iste exercitationem nemo voluptates asperiores.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="http://localhost:5000/static/img/movie3.png" alt="" width="300" height="300" class="img-circle img-responsive img-center">
+                <h2>Sin City 2</h2>
+                <p>The damaged denizens of Sin City return for another round of stories from the mind of Frank Miller. In "Just Another Saturday Night," Marv (Mickey Rourke) struggles to recall a nasty run-in with some frat boys. In "A Dame to Kill For," Dwight McCarthy (Josh Brolin) forsakes his battle with his inner…	</p><p>
+                    <a class="btn btn-default btn-lg" href="http://www.imdb.com/title/tt0458481/?ref_=fn_al_tt_2">Read More</a>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <img src="http://localhost:5000/static/img/img3.jpg" alt="" width="300" height="300" class="img-circle img-responsive img-center">
+                <h2>Warcraft</h2>
+                <p>Looking to escape from his dying world, the orc shaman Gul'dan utilizes dark magic to open a portal to the human realm of Azeroth. Supported by the fierce fighter Blackhand, Gul'dan organizes the orc clans into a conquering army called the Horde. Uniting to protect Azeroth from these hulking invader…</p><p>
+                     <a class="btn btn-default btn-lg" href="http://www.imdb.com/title/tt0803096/?ref_=fn_al_tt_1">Read More</a>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-circle img-responsive img-center" src="http://localhost:5000/static/img/Red.jpg" alt="">
+                <h2>Red</h2>
+                <p>After surviving an assault from a squad of hit men, retired CIA agent Frank Moses (Bruce Willis) reassembles his old team for an all-out war. Frank reunites with old Joe (Morgan Freeman), crazy Marvin (John Malkovich) and wily Victoria (Helen Mirren) to uncover a massive conspiracy that threatens th…</p><p>
+                     <a class="btn btn-default btn-lg" href="http://www.imdb.com/title/tt1245526/?ref_=fn_al_tt_1">Read More</a>
+                </p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; MZABOKLICKI2016</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+		
+		</div>
+
+   <div class="container">
+       
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src={{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>
